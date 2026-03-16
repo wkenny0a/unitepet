@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Unite Pet Manufacture Co., Ltd.</title>
+  <meta name="description" content="Contact Unite Pet for quotes, samples, or factory visits. Phone: +86-577-58120999, Email: unitepet@unitepet.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🐾</div>
+        <div class="logo-text">Unite<span>Pet</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a></div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span class="current">Contact Us</span></div>
+      <h1>Get In Touch</h1>
+      <p>Send us a message and our team will respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrapper fade-in-left" id="contactFormWrapper">
+          <h3 style="margin-bottom:var(--space-sm)">Send Us a Message</h3>
+          <p style="margin-bottom:var(--space-xl);color:var(--color-gray-500);font-size:0.9rem">Fill out the form below and we'll get back to you promptly.</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" name="firstName" placeholder="Your first name" required></div>
+              <div class="form-group"><label for="lastName">Last Name *</label><input type="text" id="lastName" name="lastName" placeholder="Your last name" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="your@email.com" required></div>
+              <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000"></div>
+            </div>
+            <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" name="company" placeholder="Your company name"></div>
+            <div class="form-group">
+              <label for="interest">Product Interest</label>
+              <select id="interest" name="interest">
+                <option value="">Select a product category...</option>
+                <option value="collars">Dog Collars</option>
+                <option value="harnesses">Dog Harnesses</option>
+                <option value="carseat">Car Seat Covers</option>
+                <option value="leashes">Leashes</option>
+                <option value="clothing">Pet Clothing</option>
+                <option value="beds">Pet Beds & Bowls</option>
+                <option value="toys">Pet Toys & ID Tags</option>
+                <option value="custom">Custom / OEM / ODM</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" placeholder="Tell us about your project or questions..." required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Message Sent!</h3>
+            <p>Our team will get back to you within 24 hours.</p>
+            <button class="btn btn-dark" onclick="resetForm()" style="margin-top:var(--space-md)">Send Another</button>
+          </div>
+        </div>
+
+        <div class="contact-info-cards fade-in-right">
+          <h3 style="margin-bottom:var(--space-md)">Contact Information</h3>
+          <a href="tel:+86-577-58120999" class="contact-info-card">
+            <div class="contact-info-icon">📞</div>
+            <div><h4>Phone</h4><p>+86-577-58120999</p><p style="font-size:0.8rem;color:var(--color-gray-500)">Click to call</p></div>
+          </a>
+          <a href="tel:+86-577-58120998" class="contact-info-card">
+            <div class="contact-info-icon">📠</div>
+            <div><h4>Fax</h4><p>+86-577-58120998</p></div>
+          </a>
+          <a href="mailto:unitepet@unitepet.com" class="contact-info-card">
+            <div class="contact-info-icon">✉️</div>
+            <div><h4>Email</h4><p style="color:var(--color-accent);font-weight:600">unitepet@unitepet.com</p><p style="font-size:0.8rem;color:var(--color-gray-500)">Click to email</p></div>
+          </a>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">🏢</div>
+            <div><h4>Office</h4><p>Fl.4-5, Jing Chuan East Road, Shuitou Town, Wenzhou, Zhejiang, China</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">🏭</div>
+            <div><h4>Factory</h4><p>Shuitou Industrial Park, Shuitou Town, Wenzhou, Zhejiang, China</p><p style="font-size:0.8rem;color:var(--color-gray-500)">P.C.: 325405</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">🌐</div>
+            <div><h4>Websites</h4><p><a href="http://www.unitepet.com" target="_blank">www.unitepet.com</a></p><p><a href="http://unitepet.taobao.com" target="_blank">unitepet.taobao.com</a></p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">🕐</div>
+            <div><h4>Hours</h4><p>Mon – Sat, 8AM – 6PM (CST)</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-off-white);padding:var(--space-2xl) 0">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card fade-in" style="cursor:pointer" onclick="window.location.href='tel:+86-577-58120999'">
+          <div class="feature-icon">📞</div><h3>Call Us</h3><p>Speak directly with our sales team.</p>
+          <a href="tel:+86-577-58120999" class="btn btn-dark btn-sm" style="margin-top:var(--space-sm)">+86-577-58120999</a>
+        </div>
+        <div class="feature-card fade-in" style="cursor:pointer" onclick="window.location.href='mailto:unitepet@unitepet.com'">
+          <div class="feature-icon">✉️</div><h3>Email Us</h3><p>Send us your inquiry or request samples.</p>
+          <a href="mailto:unitepet@unitepet.com" class="btn btn-dark btn-sm" style="margin-top:var(--space-sm)">Send Email</a>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🏭</div><h3>Visit Our Factory</h3><p>Welcome to visit and see our production firsthand.</p>
+          <a href="mailto:unitepet@unitepet.com?subject=Factory Visit" class="btn btn-dark btn-sm" style="margin-top:var(--space-sm)">Schedule Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">🐾</div><div class="logo-text">Unite<span>Pet</span></div></a>
+          <p>Leading pet accessories manufacturer since 2001. Quality products for global brands across 40+ countries.</p>
+        </div>
+        <div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="contact.html">Contact Us</a></div></div>
+        <div><h4>Products</h4><div class="footer-links"><a href="products.html">Dog Collars</a><a href="products.html">Dog Harnesses</a><a href="products.html">Car Seat Covers</a><a href="products.html">Leashes</a></div></div>
+        <div><h4>Contact</h4>
+          <div class="footer-contact-item"><span class="icon">📞</span><span>+86-577-58120999</span></div>
+          <div class="footer-contact-item"><span class="icon">✉️</span><span>unitepet@unitepet.com</span></div>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>Shuitou Town, Wenzhou, Zhejiang, China</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2024 Unite Pet Manufacture Co., Ltd.</span><span>P.C.: 325405</span></div>
+    </div>
+  </footer>
+
+  <div class="floating-contact">
+    <a href="mailto:unitepet@unitepet.com" class="float-btn float-btn-email" title="Email Us">✉️</a>
+    <a href="contact.html" class="float-btn float-btn-main" title="Contact Us">💬</a>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
