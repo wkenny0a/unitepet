@@ -1246,13 +1246,17 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--color-primary);
+    background: #0B1D3A;
+    background-color: #0B1D3A !important;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: var(--space-2xl);
     gap: var(--space-md);
     transform: translateX(100%);
     transition: transform var(--transition-base);
+    z-index: 9999;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .nav-links.open {
